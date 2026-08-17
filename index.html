@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#3B82F6"><meta name="description" content="Wrap Calculator for film production">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="icons/icon-192.png"><link rel="stylesheet" href="style.css">
+<title>Wrap Calculator</title></head>
+<body>
+<main class="app"><section class="card"><h1>WRAP CALCULATOR</h1>
+<div class="fields">
+<label class="field"><span>CREW CALL</span><input id="crew" inputmode="numeric" maxlength="5" placeholder="HHMM"></label>
+<label class="field"><span>LUNCH IN</span><input id="lunchIn" inputmode="numeric" maxlength="5" placeholder="HHMM"></label>
+<label class="field"><span>LUNCH OUT</span><input id="lunchOut" inputmode="numeric" maxlength="5" placeholder="HHMM"></label>
+<label class="field"><span>WRAP TIME</span><input id="wrap" inputmode="numeric" maxlength="5" placeholder="HHMM"></label>
+</div>
+<div class="buttons"><button id="calculate" class="primary">CALCULATE</button><button id="clear" class="secondary">CLEAR</button></div>
+<section id="result" class="results"><div class="result-row"><span>TOTAL DAY</span><strong id="totalValue">—</strong></div><div class="result-row"><span>LUNCH</span><strong id="lunchValue">—</strong></div><div class="result-row"><span>WORKED</span><strong id="workedValue">—</strong></div></section>
+</section></main>
+<div id="errorDialog" class="dialog-backdrop" hidden><div class="dialog"><h2>Invalid Time</h2><p id="errorMessage"></p><button id="errorOk" class="primary">OK</button></div></div>
+<script src="script.js"></script></body></html>
